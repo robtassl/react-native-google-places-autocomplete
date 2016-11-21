@@ -605,6 +605,7 @@ const GooglePlacesAutocomplete = React.createClass({
             placeholderTextColor={this.props.placeholderTextColor}
             onFocus={onFocus ? () => {this._onFocus(); onFocus()} : this._onFocus}
             clearButtonMode="while-editing"
+            underlineColorAndroid={'rgba(0,0,0,0)'} // custom change RC
           />
         </View>
         {this._getListView()}
