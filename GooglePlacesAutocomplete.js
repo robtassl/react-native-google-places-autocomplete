@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { TextInput, View, ListView, ScrollView, Image, Text, Dimensions, TouchableHighlight, TouchableWithoutFeedback, Platform, ActivityIndicator, PixelRatio } from 'react-native';
 import Qs from 'qs';
+var createReactClass = require('create-react-class');
 
 const WINDOW = Dimensions.get('window');
 
@@ -62,7 +63,7 @@ const defaultStyles = {
   },
 };
 
-const GooglePlacesAutocomplete = React.createClass({
+const GooglePlacesAutocomplete = createReactClass({
 
   propTypes: {
     placeholder: PropTypes.string,
@@ -618,7 +619,7 @@ const GooglePlacesAutocomplete = React.createClass({
 
 // this function is still present in the library to be retrocompatible with version < 1.1.0
 const create = function create(options = {}) {
-  return React.createClass({
+  return createReactClass({
     render() {
       return (
         <GooglePlacesAutocomplete ref="GooglePlacesAutocomplete"
