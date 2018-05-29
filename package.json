@@ -27,7 +27,8 @@
   "homepage": "https://github.com/FaridSafi/react-native-google-places-autocomplete#readme",
   "dependencies": {
     "qs": "^5.2.0",
-    "prop-types": "^15.6.1"
+    "prop-types": "^15.6.1",
+    "create-react-class": "^15.6.2"
   },
   "devDependencies": {
     "eslint": "^1.9.0",
@@ -36,6 +37,7 @@
   },
   "peerDependencies": {
     "react-native": ">= 0.28",
-    "prop-types": "^15.6.1"
+    "prop-types": "^15.6.1",
+    "create-react-class": "^15.6.2"
   }
 }
