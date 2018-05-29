@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import { TextInput, View, ListView, ScrollView, Image, Text, Dimensions, TouchableHighlight, TouchableWithoutFeedback, Platform, ActivityIndicator, PixelRatio } from 'react-native';
 import Qs from 'qs';
 
@@ -64,30 +65,30 @@ const defaultStyles = {
 const GooglePlacesAutocomplete = React.createClass({
 
   propTypes: {
-    placeholder: React.PropTypes.string,
-    placeholderTextColor: React.PropTypes.string,
-    onPress: React.PropTypes.func,
-    minLength: React.PropTypes.number,
-    fetchDetails: React.PropTypes.bool,
-    autoFocus: React.PropTypes.bool,
-    getDefaultValue: React.PropTypes.func,
-    timeout: React.PropTypes.number,
-    onTimeout: React.PropTypes.func,
-    query: React.PropTypes.object,
-    GoogleReverseGeocodingQuery: React.PropTypes.object,
-    GooglePlacesSearchQuery: React.PropTypes.object,
-    styles: React.PropTypes.object,
-    textInputProps: React.PropTypes.object,
-    enablePoweredByContainer: React.PropTypes.bool,
-    predefinedPlaces: React.PropTypes.array,
-    currentLocation: React.PropTypes.bool,
-    currentLocationLabel: React.PropTypes.string,
-    nearbyPlacesAPI: React.PropTypes.string,
-    filterReverseGeocodingByTypes: React.PropTypes.array,
-    predefinedPlacesAlwaysVisible: React.PropTypes.bool,
-    enableEmptySections: React.PropTypes.bool,
-    renderDescription: React.PropTypes.func,
-    renderRow: React.PropTypes.func,
+    placeholder: PropTypes.string,
+    placeholderTextColor: PropTypes.string,
+    onPress: PropTypes.func,
+    minLength: PropTypes.number,
+    fetchDetails: PropTypes.bool,
+    autoFocus: PropTypes.bool,
+    getDefaultValue: PropTypes.func,
+    timeout: PropTypes.number,
+    onTimeout: PropTypes.func,
+    query: PropTypes.object,
+    GoogleReverseGeocodingQuery: PropTypes.object,
+    GooglePlacesSearchQuery: PropTypes.object,
+    styles: PropTypes.object,
+    textInputProps: PropTypes.object,
+    enablePoweredByContainer: PropTypes.bool,
+    predefinedPlaces: PropTypes.array,
+    currentLocation: PropTypes.bool,
+    currentLocationLabel: PropTypes.string,
+    nearbyPlacesAPI: PropTypes.string,
+    filterReverseGeocodingByTypes: PropTypes.array,
+    predefinedPlacesAlwaysVisible: PropTypes.bool,
+    enableEmptySections: PropTypes.bool,
+    renderDescription: PropTypes.func,
+    renderRow: PropTypes.func,
   },
 
   getDefaultProps() {
