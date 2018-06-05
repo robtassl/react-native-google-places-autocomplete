@@ -518,7 +518,7 @@ const GooglePlacesAutocomplete = React.createClass({
     return (
       <ScrollView
         style={{ flex: 1 }}
-        keyboardShouldPersistTaps={true}
+        keyboardShouldPersistTaps="always"
         horizontal={true}
         showsHorizontalScrollIndicator={false}
         showsVerticalScrollIndicator={false}>
@@ -557,7 +557,7 @@ const GooglePlacesAutocomplete = React.createClass({
     if ((this.state.text !== '' || this.props.predefinedPlaces.length || this.props.currentLocation === true) && this.state.listViewDisplayed === true) {
       return (
         <ListView
-          keyboardShouldPersistTaps={true}
+          keyboardShouldPersistTaps="always"
           keyboardDismissMode="on-drag"
           style={[defaultStyles.listView, this.props.styles.listView]}
           dataSource={this.state.dataSource}
